@@ -185,3 +185,6 @@ dmypy.json
 
 ### Pycharm ###
 .idea/*
+
+# settings
+wyze.ini
