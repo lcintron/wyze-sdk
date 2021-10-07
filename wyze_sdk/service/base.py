@@ -11,14 +11,13 @@ from json import dumps
 from typing import Dict, Optional, Union
 from urllib.parse import urljoin
 
-import requests
-
 from wyze_sdk import version
 from wyze_sdk.errors import WyzeRequestError
 from wyze_sdk.signature import RequestVerifier
 
 from .wyze_response import WyzeResponse
 
+import requests
 
 class BaseServiceClient(metaclass=ABCMeta):
 

@@ -188,3 +188,4 @@ dmypy.json
 
 # settings
 wyze.ini
+wyzetest.py
