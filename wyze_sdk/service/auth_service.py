@@ -76,7 +76,7 @@ class AuthServiceClient(ExServiceClient):
         if response['access_token']:
             return response
 
-        if 'TotpVerificationCode' in response.get('mfa_options'):
+        if response.get('mfa_options') and 'TotpVerificationCode' in response.get('mfa_options'):
             # TOTP 2FA
             mfa_type = 'TotpVerificationCode'
             if totp_key:
